@@ -1,5 +1,5 @@
 ---
-title: React 面包屑导航组件
+title: React Breadcrumbs component
 components: Breadcrumbs, Link, Typography
 ---
 
