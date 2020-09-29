@@ -1,5 +1,5 @@
 ---
-title: React 对话框组件
+title: React Dialog component
 components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
 githubLabel: 'component: Dialog'
 materialDesign: https://material.io/components/dialogs
