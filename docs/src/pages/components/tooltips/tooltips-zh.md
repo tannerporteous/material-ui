@@ -1,5 +1,5 @@
 ---
-title: React 工具提示组件
+title: React Tooltip component
 components: Tooltip
 ---
 
