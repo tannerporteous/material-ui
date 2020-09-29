@@ -1,5 +1,5 @@
 ---
-title: React 菜单组件
+title: React Menu component
 components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 ---
 
