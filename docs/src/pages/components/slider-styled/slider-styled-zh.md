@@ -1,5 +1,5 @@
 ---
-title: React 滑块控件
+title: React Slider component
 components: SliderStyled, SliderUnstyled
 githubLabel:
   component: Slider
