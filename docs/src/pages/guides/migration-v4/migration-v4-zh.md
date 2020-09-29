@@ -46,7 +46,7 @@ yarn add @material-ui/core@next
 
 ### 主题
 
-- Breakpoints are now treated as values instead of ranges. The behavior of `down(key)` was changed to define media query less than the value defined with the corresponding breakpoint (exclusive). The `between(start, end)` was also updated to define media query for the values between the actual values of start (inclusive) and end (exclusive). When using the `down()` breakpoints utility you need to update the breakpoint key by one step up. When using the `between(start, end)` the end breakpoint should also be updated by one step up. The same should be done when using the `Hidden` component. Find examples of the changes required defined below:
+- 断点现在被当作值而不是范围来处理。 The behavior of `down(key)` was changed to define media query less than the value defined with the corresponding breakpoint (exclusive). The `between(start, end)` was also updated to define media query for the values between the actual values of start (inclusive) and end (exclusive). When using the `down()` breakpoints utility you need to update the breakpoint key by one step up. When using the `between(start, end)` the end breakpoint should also be updated by one step up. The same should be done when using the `Hidden` component. Find examples of the changes required defined below:
 
 ```diff
 -theme.breakpoints.down('sm') // '@media (max-width:959.95px)' - [0, sm + 1) => [0, md)
@@ -616,6 +616,19 @@ const theme = createMuitheme({
   />
   ```
 
+### SpeedDial
+
+- 该组件已从实验室包移动到核心包。 现在这个组件处于稳定版本。
+
+  ```diff
+  -import SpeedDial from '@material-ui/lab/SpeedDial';
+  -import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
+  -import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
+  +import SpeedDial from '@material-ui/core/SpeedDial';
+  +import SpeedDialAction from '@material-ui/core/SpeedDialAction';
+  +import SpeedDialIcon from '@material-ui/core/SpeedDialIcon';
+  ```
+
 ### Stepper 步骤条组件
 
 - 根组件（Paper）已经被 div 所取代。 Stepper 不再有立体效果，也不再继承 Paper 的属性。 这个改动是为了鼓励开发者进行组合使用。
@@ -648,7 +661,7 @@ const theme = createMuitheme({
 +</Stepper>
 ```
 
-### 分页
+### TablePagination（表格分页）
 
 - 如果你需要自定义表格分页的操作标签（actions labels），那么就必须使用 `getItemAriaLabel` 属性。 这是为了与 `Pagination` 组件保持一致。
 
