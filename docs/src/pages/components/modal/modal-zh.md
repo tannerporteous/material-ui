@@ -1,5 +1,5 @@
 ---
-title: React 模态框组件
+title: React Modal component
 components: Modal
 ---
 
