@@ -1,5 +1,5 @@
 ---
-title: React 消息条组件
+title: React Snackbar component
 components: Snackbar, SnackbarContent
 ---
 
