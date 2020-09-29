@@ -1,5 +1,5 @@
 ---
-title: React 传送门组件
+title: React Portal component
 components: Portal
 ---
 
