@@ -1,5 +1,5 @@
 ---
-title: React 骨架屏组件
+title: React Skeleton component
 components: Skeleton
 githubLabel: 'component: Skeleton'
 ---
