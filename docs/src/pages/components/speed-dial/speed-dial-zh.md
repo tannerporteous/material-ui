@@ -1,8 +1,9 @@
 ---
-title: React 快速拨号组件
+title: React Speed Dial component
 components: SpeedDial, SpeedDialAction, SpeedDialIcon
 githubLabel: 'component: SpeedDial'
-packageName: '@material-ui/lab'
+0: 'https://material.io/components/buttons-floating-action-button#types-of-transitions'
+waiAria: 'https://www.w3.org/TR/wai-aria-practices/#menubutton'
 ---
 
 # Speed Dial 快速拨号
@@ -17,7 +18,7 @@ packageName: '@material-ui/lab'
 
 浮动操作按钮可以显示相关操作。
 
-{{"demo": "pages/components/speed-dial/SpeedDials.js"}}
+{{"demo": "pages/components/speed-dial/BasicSpeedDial.js"}}
 
 ## 自定义关闭图标
 
@@ -38,3 +39,25 @@ SpeedDialActions 提示组件可以持续显示，这样一来用户不用长按
 为了演示的目的，该示例为所有设备都启用了该功能，但在生产环境中，它可以使用 `isTouch` 逻辑来有条件地设置属性。
 
 {{"demo": "pages/components/speed-dial/SpeedDialTooltipOpen.js"}}
+
+## 无障碍设计
+
+### ARIA
+
+#### Required
+
+- You should provide an `ariaLabel` for the speed dial component.
+- You should provide a `tooltipTitle` for each speed dial action.
+
+#### Provided
+
+- The Fab has `aria-haspopup`, `aria-expanded` and `aria-controls` attributes.
+- The speed dial actions container has `role="menu"` and `aria-orientation` set acccording to the direction.
+- The speed dial actions have `role="menuitem"`, and an `aria-describedby` attribute that references the associated tooltip.
+
+### 键盘输入
+
+- The speed dial opens on focus.
+- The Space and Enter keys trigger the selected speed dial action, and toggle the speed dial open state.
+- The cursor keys move focus to the next or previous speed dial action. (Note that any cursor direction can be used initially to open the speed dial. This enables the expected behavior for the actual or percieved orientation of the speed dial, for example for a screen reader user who percieves the speed dial as a drop-down menu.)
+- The Escape key closes the speed dial and, if a speed dial action was focused, returns focus to the Fab.
