@@ -1,5 +1,5 @@
 ---
-title: React 工具提示组件
+title: React Tooltip component
 components: Tooltip
 githubLabel: 'component: Tooltip'
 materialDesign: https://material.io/components/tooltips
@@ -120,3 +120,17 @@ const MyComponent = React.forwardRef(function MyComponent(props, ref) {
 在移动设备上使用时，用户长按元素就会显示出文字提示，并且持续 1500ms 之后就会自动隐藏。 您可以使用 `disableTouchListener` 属性禁用此功能。
 
 {{"demo": "pages/components/tooltips/DelayTooltips.js"}}
+
+## 无障碍设计
+
+(WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#tooltip)
+
+By default, the tooltip only labels its child element. This is notably different from `title` which can either label **or** describe its child depending on whether the child already has a label. For example, in:
+
+```html
+<button title="some more information">A button</button>
+```
+
+the `title` acts as an accessible description. If you want the tooltip to act as an accessible description you can pass `describeChild`. Note that you shouldn't use `describeChild` if the tooltip provides the only visual label. Otherwise, the child would have no accessible name and the tooltip would violate [success criterion 2.5.3 in WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html).
+
+{{"demo": "pages/components/tooltips/AccessibilityTooltips.js"}}
