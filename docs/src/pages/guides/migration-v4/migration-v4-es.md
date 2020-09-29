@@ -608,6 +608,19 @@ const theme = createMuitheme({
   />
   ```
 
+### SpeedDial
+
+- Mueve el componente del laboratorio al core. El componente ahora es estable.
+
+  ```diff
+  -import SpeedDial from '@material-ui/lab/SpeedDial';
+  -import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
+  -import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
+  +import SpeedDial from '@material-ui/core/SpeedDial';
+  +import SpeedDialAction from '@material-ui/core/SpeedDialAction';
+  +import SpeedDialIcon from '@material-ui/core/SpeedDialIcon';
+  ```
+
 ### Stepper (Pasos a pasos)
 
 - The root component (Paper) was replaced with a div. Stepper no longer has elevation, nor inherits Paper's props. This change is meant to encourage composition.
