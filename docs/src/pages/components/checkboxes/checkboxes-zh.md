@@ -1,5 +1,5 @@
 ---
-title: React 多选框组件
+title: React Checkbox component
 components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 materialDesign: 'https://material.io/components/selection-controls#checkboxes'
 githubLabel: 'component: Checkbox'
