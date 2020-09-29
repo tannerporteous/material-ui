@@ -1,5 +1,5 @@
 ---
-title: React 浮动操作按钮组件
+title: React Fab component
 components: Fab
 githubLabel: 'component: Fab'
 materialDesign: https://material.io/components/buttons-floating-action-button
