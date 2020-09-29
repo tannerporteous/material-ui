@@ -1,5 +1,6 @@
 ---
-components: Typography
+title: React Typography component
+components: 文字排版
 ---
 
 # Typography 文字铸排
