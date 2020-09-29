@@ -1,5 +1,5 @@
 ---
-title: React 弹出框组件
+title: React Popover component
 components: Grow, Popover
 githubLabel: 'component: Popover'
 ---
