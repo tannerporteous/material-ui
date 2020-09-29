@@ -1,5 +1,5 @@
 ---
-title: React 隐藏组件
+title: React Hidden component
 components: Hidden
 githubLabel: 'component: Hidden'
 ---
