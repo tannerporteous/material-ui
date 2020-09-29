@@ -1,5 +1,5 @@
 ---
-title: React 自动补全组件
+title: React Autocomplete component
 components: TextField, Popper, Autocomplete
 ---
 
