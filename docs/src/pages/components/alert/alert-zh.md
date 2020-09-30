@@ -1,5 +1,5 @@
 ---
-title: React Alert component
+title: React 警告提示组件
 components: Alert, AlertTitle
 ---
 
