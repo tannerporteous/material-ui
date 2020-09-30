@@ -13,7 +13,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#alert'
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
-## Alerta simples
+## Alertas básicos
 
 O alerta oferece quatro níveis de severidade que se distinguem em diferentes ícones e cores.
 
