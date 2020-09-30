@@ -1,5 +1,5 @@
 ---
-title: React Autocomplete component
+title: React 自动补全组件
 components: TextField, Popper, Autocomplete
 githubLabel: 'component: Autocomplete'
 waiAria: 'https://www.w3.org/TR/wai-aria-practices/#combobox'
@@ -30,12 +30,11 @@ packageName: '@material-ui/lab'
 默认情况下，该组件接受和以下结构相同的选项：
 
 ```ts
-const filterOptions = createFilterOptions({
-  matchFrom: 'start',
-  stringify: option => option.title,
-});
-
-<Autocomplete filterOptions={filterOptions} />
+interface AutocompleteOption {
+  label: string;
+}
+// 或者
+type AutocompleteOption = string;
 ```
 
 从248个国家中选择一个。
