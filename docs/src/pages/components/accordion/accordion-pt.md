@@ -1,5 +1,5 @@
 ---
-title: React Accordion component
+title: Componente de Acordeão React
 components: Accordion, AccordionActions, AccordionDetails, AccordionSummary
 githubLabel: 'component: Accordion'
 materialDesign: https://material.io/archive/guidelines/components/expansion-panels.html
