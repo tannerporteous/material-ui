@@ -1,5 +1,5 @@
 ---
-title: React Box component
+title: React Box 组件
 ---
 
 # Box 分组
