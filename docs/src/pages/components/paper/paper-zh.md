@@ -1,5 +1,5 @@
 ---
-title: React Paper component
+title: React 纸张组件
 components: Paper
 githubLabel: 'component: Paper'
 ---
@@ -12,7 +12,7 @@ githubLabel: 'component: Paper'
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
-## 变体
+## 基础的纸张
 
 {{"demo": "pages/components/paper/SimplePaper.js", "bg": true}}
 
