@@ -1,5 +1,5 @@
 ---
-title: React Switch component
+title: React 开关组件
 components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 githubLabel: 'component: Switch'
 materialDesign: 'https://material.io/components/selection-controls#switches'
